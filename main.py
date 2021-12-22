@@ -208,7 +208,8 @@ def Main():
 			
 			if GameStat != 1:	# If game has ended
 				GameOver = True
-				GameOverAnimate()
+				if(GameStat != TIE):
+					GameOverAnimate()
 				End(GameStat)
 				time.sleep(2)
 				break
